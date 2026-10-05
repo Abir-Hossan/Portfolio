@@ -1,2 +1,57 @@
-import { Menu, Moon, Sun, X } from 'lucide-react';import { useState } from 'react';import { navigation } from '../data/site';import { useTheme } from '../hooks/useTheme';
-export default function Header(){const[open,setOpen]=useState(false);const{theme,toggleTheme}=useTheme();return <header className="site-header"><nav className="container nav" aria-label="Primary"><a className="brand" href="#home"><span className="brand-mark">✣</span> logipsum°</a><div className="desktop-nav">{navigation.map(n=><a key={n.href} href={n.href}>{n.label}</a>)}</div><div className="nav-actions"><button className="icon-btn" onClick={toggleTheme} aria-label={`Switch to ${theme==='dark'?'light':'dark'} mode`}>{theme==='dark'?<Sun/>:<Moon/>}</button><a className="btn btn-outline desktop-cta" href="#contact">Contact Me</a><button className="icon-btn mobile-menu-btn" onClick={()=>setOpen(v=>!v)} aria-expanded={open} aria-controls="mobile-menu" aria-label="Toggle navigation">{open?<X/>:<Menu/>}</button></div></nav>{open&&<div id="mobile-menu" className="mobile-menu">{navigation.map(n=><a key={n.href} href={n.href} onClick={()=>setOpen(false)}>{n.label}</a>)}<a href="#contact" onClick={()=>setOpen(false)}>Contact Me</a></div>}</header>}
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { useState } from "react";
+import { navigation } from "../data/site";
+import { useTheme } from "../hooks/useTheme";
+export default function Header() {
+  const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  return (
+    <header className="site-header">
+      <nav className="container nav" aria-label="Primary">
+        <a className="brand" href="#home">
+          <span className="brand-mark"></span><i>ABIR HOSSAN</i>
+        </a>
+        <div className="desktop-nav">
+          {navigation.map((n) => (
+            <a key={n.href} href={n.href}>
+              {n.label}
+            </a>
+          ))}
+        </div>
+        <div className="nav-actions">
+          <button
+            className="icon-btn"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            {theme === "dark" ? <Sun /> : <Moon />}
+          </button>
+          <a className="btn btn-outline desktop-cta" href="#contact">
+            Contact Me
+          </a>
+          <button
+            className="icon-btn mobile-menu-btn"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation"
+          >
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
+      </nav>
+      {open && (
+        <div id="mobile-menu" className="mobile-menu">
+          {navigation.map((n) => (
+            <a key={n.href} href={n.href} onClick={() => setOpen(false)}>
+              {n.label}
+            </a>
+          ))}
+          <a href="#contact" onClick={() => setOpen(false)}>
+            Contact Me
+          </a>
+        </div>
+      )}
+    </header>
+  );
+}

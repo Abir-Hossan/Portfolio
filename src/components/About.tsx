@@ -1,1 +1,29 @@
-export default function About(){return <section id="about" className="section about"><div className="container about-grid"><div className="about-art"><img loading="lazy" src="/images/about-person.svg" alt="John in a formal portrait"/></div><div><p className="eyebrow">About</p><h2>About Me</h2><p>I’m a product designer focused on creating useful, human digital experiences. I enjoy moving from early product thinking and brand direction into interfaces that feel simple, considered and coherent.</p><p>My process balances strategy with craft. I work closely with teams, test assumptions early and build systems that can grow without losing the character that makes a product distinct.</p></div></div></section>}
+export default function About() {
+  return (
+    <section id="about" className="section about">
+      <div className="container about-grid">
+        <div className="about-art">
+          <img
+            loading="lazy"
+            src="/images/about-person.svg"
+            alt="John in a formal portrait"
+          />
+        </div>
+        <div>
+          <p className="eyebrow">About</p>
+          <h2>About Me</h2>
+          <p>
+            Hi there! I’m Abir Hossan, a product designer focused on creating useful, human digital
+            experiences. I enjoy moving from early product thinking and brand
+            direction into interfaces that feel simple, considered and coherent.
+          </p>
+          <p>
+            My process balances strategy with craft. I work closely with teams,
+            test assumptions early and build systems that can grow without
+            losing the character that makes a product distinct.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
