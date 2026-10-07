@@ -4,7 +4,7 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="container hero-grid">
         <div className="hero-copy">
-          <h4 className="eyebrow">Hey, I am ABIR</h4>
+          <h3 className="eyebrow">Hey, I am ABIR</h3>
           <h1>
             I build  <span>Modern Websites</span>
             <br />
@@ -23,7 +23,7 @@ export default function Hero() {
           <Sparkles className="spark s2" />
           <span className="plus p1">✦</span>
           <span className="plus p2">✦</span>
-          <img src="/images/hero-portrait.png" alt="Abir Hossan, product designer" />
+          <img src="/public/images/hero-person.png" alt="Abir Hossan, product designer" />
         </div>
       </div>
     </section>

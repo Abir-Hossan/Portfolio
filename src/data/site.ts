@@ -7,9 +7,9 @@ export const expertise:ExpertiseItem[]=[
 {title:'UI & UX Design',description:'Design intuitive interfaces and thoughtful user journeys grounded in clarity, usability and visual craft.',icon:Feather},
 {title:'Webflow Development',description:'Turn polished design systems into responsive, accessible and production-ready digital experiences.',icon:Code2}];
 export const projects:Project[]=[
-{title:'Ahuse',description:'A modern commerce experience with an editorial interface and clear conversion-focused product journeys.',image:'/images/project-ahuse.svg',href:'#'},
-{title:'App Dashboard',description:'A clean dashboard concept for managing profile data, content and day-to-day product activity.',image:'/images/project-dashboard.svg',href:'#'},
-{title:'Easy Rent',description:'A rental discovery experience that makes comparing spaces and taking action feel simple and direct.',image:'/images/project-rent.svg',href:'#'}];
+{title:'Ahuse',description:'A modern commerce experience with an editorial interface and clear conversion-focused product journeys.',image:'/public/images/project-ahuse.png',href:'#'},
+{title:'App Dashboard',description:'A clean dashboard concept for managing profile data, content and day-to-day product activity.',image:'/public/images/project-dashboard.png',href:'#'},
+{title:'Easy Rent',description:'A rental discovery experience that makes comparing spaces and taking action feel simple and direct.',image:'/public/images/project-rent.png',href:'#'}];
 export const testimonials:Testimonial[]=[
 {name:'Dianne Russell',role:'Starbucks',quote:'John brings rare clarity to complex product problems. The result felt polished, thoughtful and immediately usable.',initials:'DR'},
 {name:'Kristin Watson',role:'Louis Vuitton',quote:'A strong design partner who listens carefully, moves with purpose and protects the details that make an experience work.',initials:'KW'},

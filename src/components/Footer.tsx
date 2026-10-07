@@ -1,1 +1,39 @@
-import { navigation, socials } from '../data/site';export default function Footer(){return <footer><div className="container"><div className="footer-top"><a className="brand" href="#home"><span className="brand-mark">✣</span> logipsum°</a><nav aria-label="Footer">{navigation.map(n=><a key={n.href} href={n.href}>{n.label}</a>)}<a href="#contact">Contact</a></nav><div className="socials">{socials.map(s=><a key={s.label} href={s.href} aria-label={s.label}><s.icon/></a>)}</div></div><div className="footer-bottom"><span>Made with <b>♥</b> by Relume</span><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies Settings</a></div></div></div></footer>}
+import { navigation, socials } from "../data/site";
+export default function Footer() {
+  return (
+    <footer>
+      <div className="container">
+        <div className="footer-top">
+          <a className="brand" href="#home">
+            <span className="brand-mark">✣</span> logipsum°
+          </a>
+          <nav aria-label="Footer">
+            {navigation.map((n) => (
+              <a key={n.href} href={n.href}>
+                {n.label}
+              </a>
+            ))}
+            <a href="#contact">Contact</a>
+          </nav>
+          <div className="socials">
+            {socials.map((s) => (
+              <a key={s.label} href={s.href} aria-label={s.label}>
+                <s.icon />
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <span>
+            Made with <b>♥</b> by Relume
+          </span>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

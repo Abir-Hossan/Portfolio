@@ -5,8 +5,8 @@ export default function About() {
         <div className="about-art">
           <img
             loading="lazy"
-            src="/images/about-person.svg"
-            alt="John in a formal portrait"
+            src="/public/images/about-person.png"
+            alt="Abir Hossan in a formal portrait"
           />
         </div>
         <div>
