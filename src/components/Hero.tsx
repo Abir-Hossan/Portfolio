@@ -23,7 +23,7 @@ export default function Hero() {
           <Sparkles className="spark s2" />
           <span className="plus p1">✦</span>
           <span className="plus p2">✦</span>
-          <img src="/public/images/hero-person.png" alt="Abir Hossan, product designer" />
+          <img src="/images/hero-person.png" alt="Abir Hossan, product designer" />
         </div>
       </div>
     </section>
